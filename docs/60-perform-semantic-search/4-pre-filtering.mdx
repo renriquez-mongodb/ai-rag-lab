@@ -1,0 +1,121 @@
+# 🦹 Combine pre-filtering with vector search
+
+Pre-filtering a technique to optimize vector search by only considering documents that match certain criteria during vector search.
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **🦹‍♀️ Combine pre-filtering with vector search** section in the notebook to get a sense of how to combine pre-filtering with MongoDB Atlas Vector Search.
+
+:::caution
+**DO NOT** actually modify the existing vector index definitions in the Atlas UI, or the existing pipeline definitions in the code.
+:::
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_16**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+{
+    "fields": [
+        {
+            "numDimensions": 1024,
+            "path": "embedding",
+            "similarity": "cosine",
+            "type": "vector",
+        },
+        {
+            "path": "metadata.language"
+            "type": "filter",
+        },
+    ]
+}
+```
+</div>
+</details>
+
+**CODE_BLOCK_17**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+[
+    {
+        "$vectorSearch": {
+            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
+            "queryVector": query_embedding,
+            "path": "embedding",
+            "numCandidates": 150,
+            "limit": 5,
+            "filter": {"metadata.language": "en"},
+        }
+    },
+    {
+        "$project": {
+            "_id": 0,
+            "page_content": 1,
+            "score": {"$meta": "vectorSearchScore"},
+        }
+    },
+]
+```
+</div>
+</details>
+
+**CODE_BLOCK_18**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+{
+    "fields": [
+        {
+            "numDimensions": 1024,
+            "path": "embedding",
+            "similarity": "cosine",
+            "type": "vector",
+        },
+        {
+            "path": "metadata.language"
+            "type": "filter",
+        },
+        {
+            "path": "type"
+            "type": "filter",
+        },
+    ]
+}
+```
+</div>
+</details>
+
+**CODE_BLOCK_19**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+[
+    {
+        "$vectorSearch": {
+            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
+            "queryVector": query_embedding,
+            "path": "embedding",
+            "numCandidates": 150,
+            "limit": 5,
+            "filter": {"$and": [{"metadata.language": "en"}, {"type": "Document"}]},
+        }
+    },
+    {
+        "$project": {
+            "_id": 0,
+            "page_content": 1,
+            "score": {"$meta": "vectorSearchScore"},
+        }
+    },
+]
+```
+</div>
+</details>

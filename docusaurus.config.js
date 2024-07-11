@@ -9,7 +9,7 @@ const workshopName = 'ai-rag-lab';
 const organizationName = "mongodb-developer";
 
 // Main page config
-const title = "Building RAG Applications using MongoDB";
+const title = "Build RAG Applications using MongoDB";
 const tagLine = "";
 const startButtonTitle = "Start Lab";
 const favicon = "img/favicon.svg"
