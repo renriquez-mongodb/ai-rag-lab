@@ -1,6 +1,6 @@
-# Developer Days AI RAG Lab
+# Developer Days RAG Lab
 
-This is the AI RAG Lab used during MongoDB Developer Days that covers building RAG applications using MongoDB.
+This is the RAG Lab used during MongoDB Developer Days that covers building RAG applications using MongoDB.
 
 You can access the online version of the lab [here](https://mongodb-developer.github.io/ai-rag-lab/).
 
