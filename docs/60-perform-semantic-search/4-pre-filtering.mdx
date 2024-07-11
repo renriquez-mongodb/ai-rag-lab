@@ -22,12 +22,12 @@ The answers for code blocks in this section are as follows:
             "numDimensions": 1024,
             "path": "embedding",
             "similarity": "cosine",
-            "type": "vector",
+            "type": "vector"
         },
         {
             "path": "metadata.language"
-            "type": "filter",
-        },
+            "type": "filter"
+        }
     ]
 }
 ```
@@ -48,16 +48,16 @@ The answers for code blocks in this section are as follows:
             "path": "embedding",
             "numCandidates": 150,
             "limit": 5,
-            "filter": {"metadata.language": "en"},
+            "filter": {"metadata.language": "en"}
         }
     },
     {
         "$project": {
             "_id": 0,
             "page_content": 1,
-            "score": {"$meta": "vectorSearchScore"},
+            "score": {"$meta": "vectorSearchScore"}
         }
-    },
+    }
 ]
 ```
 </div>
@@ -75,16 +75,16 @@ The answers for code blocks in this section are as follows:
             "numDimensions": 1024,
             "path": "embedding",
             "similarity": "cosine",
-            "type": "vector",
+            "type": "vector"
         },
         {
             "path": "metadata.language"
-            "type": "filter",
+            "type": "filter"
         },
         {
             "path": "type"
-            "type": "filter",
-        },
+            "type": "filter"
+        }
     ]
 }
 ```
@@ -105,16 +105,21 @@ The answers for code blocks in this section are as follows:
             "path": "embedding",
             "numCandidates": 150,
             "limit": 5,
-            "filter": {"$and": [{"metadata.language": "en"}, {"type": "Document"}]},
+            "filter": {
+                "$and": [
+                    {"metadata.language": "en"},
+                    {"type": "Document"}
+                ]
+            }
         }
     },
     {
         "$project": {
             "_id": 0,
             "page_content": 1,
-            "score": {"$meta": "vectorSearchScore"},
+            "score": {"$meta": "vectorSearchScore"}
         }
-    },
+    }
 ]
 ```
 </div>
