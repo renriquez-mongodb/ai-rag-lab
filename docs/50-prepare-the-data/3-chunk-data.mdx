@@ -1,0 +1,42 @@
+# 👐 Chunk up the data
+
+Since we are working with large documents, we first need to break them up into smaller chunks before embedding and storing them in MongoDB.
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 4: Chunk up the data** section in the notebook to chunk up the documents we loaded.
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_3**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+    encoding_name="cl100k_base", chunk_size=200, chunk_overlap=30
+)
+```
+</div>
+</details>
+
+**CODE_BLOCK_4**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+text_splitter.split_documents(docs)
+```
+</div>
+</details>
+
+**CODE_BLOCK_5**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+doc.dict() for doc in split_docs
+```
+</div>
+</details>

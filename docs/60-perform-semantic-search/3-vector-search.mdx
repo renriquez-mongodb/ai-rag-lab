@@ -1,0 +1,57 @@
+# 👐 Perform semantic search
+
+Now let's run some vector search queries against our data present in MongoDB.
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 8: Perform semantic search on your data** section in the notebook to run vector search queries against your data.
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_13**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+get_embedding(user_query)
+```
+</div>
+</details>
+
+**CODE_BLOCK_14**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+[
+    {
+        "$vectorSearch": {
+            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
+            "queryVector": query_embedding,
+            "path": "embedding",
+            "numCandidates": 150,
+            "limit": 5,
+        }
+    },
+    {
+        "$project": {
+            "_id": 0,
+            "page_content": 1,
+            "score": {"$meta": "vectorSearchScore"},
+        }
+    },
+]
+```
+</div>
+</details>
+
+**CODE_BLOCK_15**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+collection.aggregate(pipeline)
+```
+</div>
+</details>
