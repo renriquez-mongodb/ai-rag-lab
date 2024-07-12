@@ -1,0 +1,8 @@
+{
+  "label": "Add memory to the RAG application",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Retrieve chat message history from MongoDB and incorporate it into the RAG application."
+  }
+}

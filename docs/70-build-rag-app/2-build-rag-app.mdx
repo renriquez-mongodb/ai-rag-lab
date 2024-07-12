@@ -1,0 +1,50 @@
+# 👐 Build the RAG application
+
+Let's create a simple RAG application that takes in a user query, retrieves contextually relevant documents from MongoDB Atlas, and passes the query and retrieved context to the _Llama 3 8B Instruct_ model to generate an answer to the user question.
+
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 9: Build the RAG application** section in the notebook to build the RAG application.
+
+The answers for code blocks in this section are as follows:
+
+**CODE_BLOCK_20**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+vector_search(user_query)
+```
+</div>
+</details>
+
+**CODE_BLOCK_21**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+"\n\n".join([d.get("page_content", "") for d in context])
+```
+</div>
+</details>
+
+**CODE_BLOCK_22**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+response = fw_client.chat.completions.create(
+    model=model,
+    temperature=0,
+    messages=[
+        {
+            "role": "user",
+            "content": create_prompt(user_query),
+        }
+    ],
+)
+print(response.choices[0].message.content)
+```
+</div>
+</details>
