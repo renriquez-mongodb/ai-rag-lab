@@ -6,7 +6,7 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 10:
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_25**
+**CODE_BLOCK_27**
 
 <details>
 <summary>Answer</summary>
@@ -17,7 +17,7 @@ history_collection.create_index("session_id")
 </div>
 </details>
 
-**CODE_BLOCK_26**
+**CODE_BLOCK_28**
 
 <details>
 <summary>Answer</summary>
@@ -33,7 +33,7 @@ history_collection.create_index("session_id")
 </div>
 </details>
 
-**CODE_BLOCK_27**
+**CODE_BLOCK_29**
 
 <details>
 <summary>Answer</summary>
@@ -44,7 +44,7 @@ history_collection.insert_one(message)
 </div>
 </details>
 
-**CODE_BLOCK_28**
+**CODE_BLOCK_30**
 
 <details>
 <summary>Answer</summary>
@@ -55,7 +55,7 @@ history_collection.find({"session_id": session_id}).sort("timestamp", 1)
 </div>
 </details>
 
-**CODE_BLOCK_29**
+**CODE_BLOCK_31**
 
 <details>
 <summary>Answer</summary>
@@ -66,19 +66,19 @@ history_collection.find({"session_id": session_id}).sort("timestamp", 1)
 </div>
 </details>
 
-**CODE_BLOCK_30**
+**CODE_BLOCK_32**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
 message_history = retrieve_session_history(session_id)
-messages += message_history
+messages.extend(message_history)
 ```
 </div>
 </details>
 
-**CODE_BLOCK_31**
+**CODE_BLOCK_33**
 
 <details>
 <summary>Answer</summary>
@@ -90,7 +90,7 @@ messages.append(user_message)
 </div>
 </details>
 
-**CODE_BLOCK_32**
+**CODE_BLOCK_34**
 
 <details>
 <summary>Answer</summary>

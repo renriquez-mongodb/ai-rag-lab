@@ -2,13 +2,13 @@ import Screenshot from "@site/src/components/Screenshot";
 
 # 👐 Ingest data into MongoDB
 
-The final step to build a MongoDB vector store for our RAG application is to ingest the embedded documents into MongoDB.
+The final step to build a MongoDB vector store for our RAG application is to ingest the embedded article chunks into MongoDB.
 
 Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 6: Ingest data into MongoDB** section in the notebook to ingest the embedded documents into MongoDB.
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_9**
+**CODE_BLOCK_11**
 
 <details>
 <summary>Answer</summary>
@@ -19,7 +19,7 @@ MongoClient(MONGODB_URI)
 </div>
 </details>
 
-**CODE_BLOCK_10**
+**CODE_BLOCK_12**
 
 <details>
 <summary>Answer</summary>
@@ -30,7 +30,7 @@ mongo_client[DB_NAME][COLLECTION_NAME]
 </div>
 </details>
 
-**CODE_BLOCK_11**
+**CODE_BLOCK_13**
 
 <details>
 <summary>Answer</summary>
@@ -41,7 +41,7 @@ collection.delete_many({})
 </div>
 </details>
 
-**CODE_BLOCK_12**
+**CODE_BLOCK_14**
 
 <details>
 <summary>Answer</summary>

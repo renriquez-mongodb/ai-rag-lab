@@ -2,7 +2,7 @@
 
 Since we are working with large documents, we first need to break them up into smaller chunks before embedding and storing them in MongoDB.
 
-Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 4: Chunk up the data** section in the notebook to chunk up the documents we loaded.
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 4: Chunk up the data** section in the notebook to chunk up the articles we loaded.
 
 The answers for code blocks in this section are as follows:
 
@@ -13,7 +13,7 @@ The answers for code blocks in this section are as follows:
 <div>
 ```python
 RecursiveCharacterTextSplitter.from_tiktoken_encoder(
-    encoding_name="cl100k_base", chunk_size=200, chunk_overlap=30
+    encoding_name="cl100k_base", separators=separators, chunk_size=200, chunk_overlap=30
 )
 ```
 </div>
@@ -25,7 +25,7 @@ RecursiveCharacterTextSplitter.from_tiktoken_encoder(
 <summary>Answer</summary>
 <div>
 ```python
-text_splitter.split_documents(docs)
+doc[text_field]
 ```
 </div>
 </details>
@@ -36,7 +36,34 @@ text_splitter.split_documents(docs)
 <summary>Answer</summary>
 <div>
 ```python
-doc.dict() for doc in split_docs
+text_splitter.split_text(text)
+```
+</div>
+</details>
+
+**CODE_BLOCK_6**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+for chunk in chunks:
+    temp = doc.copy()
+    temp[text_field] = chunk
+    chunked_data.append(temp)
+```
+</div>
+</details>
+
+**CODE_BLOCK_7**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+for doc in docs:
+    chunks = get_chunks(doc, "body")
+    split_docs.extend(chunks)
 ```
 </div>
 </details>

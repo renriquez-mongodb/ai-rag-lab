@@ -10,59 +10,6 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **🦹‍�
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_16**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-{
-    "fields": [
-        {
-            "numDimensions": 1024,
-            "path": "embedding",
-            "similarity": "cosine",
-            "type": "vector"
-        },
-        {
-            "path": "metadata.language"
-            "type": "filter"
-        }
-    ]
-}
-```
-</div>
-</details>
-
-**CODE_BLOCK_17**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-[
-    {
-        "$vectorSearch": {
-            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
-            "queryVector": query_embedding,
-            "path": "embedding",
-            "numCandidates": 150,
-            "limit": 5,
-            "filter": {"metadata.language": "en"}
-        }
-    },
-    {
-        "$project": {
-            "_id": 0,
-            "page_content": 1,
-            "score": {"$meta": "vectorSearchScore"}
-        }
-    }
-]
-```
-</div>
-</details>
-
 **CODE_BLOCK_18**
 
 <details>
@@ -78,11 +25,7 @@ The answers for code blocks in this section are as follows:
             "type": "vector"
         },
         {
-            "path": "metadata.language"
-            "type": "filter"
-        },
-        {
-            "path": "type"
+            "path": "metadata.contentType",
             "type": "filter"
         }
     ]
@@ -105,10 +48,67 @@ The answers for code blocks in this section are as follows:
             "path": "embedding",
             "numCandidates": 150,
             "limit": 5,
+            "filter": {"metadata.contentType": "Video"}
+        }
+    },
+    {
+        "$project": {
+            "_id": 0,
+            "body": 1,
+            "score": {"$meta": "vectorSearchScore"}
+        }
+    }
+]
+```
+</div>
+</details>
+
+**CODE_BLOCK_20**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+{
+    "fields": [
+        {
+            "numDimensions": 1024,
+            "path": "embedding",
+            "similarity": "cosine",
+            "type": "vector"
+        },
+        {
+            "path": "metadata.contentType",
+            "type": "filter"
+        },
+        {
+            "path": "updated",
+            "type": "filter"
+        }
+    ]
+}
+```
+</div>
+</details>
+
+**CODE_BLOCK_21**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+[
+    {
+        "$vectorSearch": {
+            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
+            "queryVector": query_embedding,
+            "path": "embedding",
+            "numCandidates": 150,
+            "limit": 5,
             "filter": {
                 "$and": [
-                    {"metadata.language": "en"},
-                    {"type": "Document"}
+                    {"metadata.contentType": "Video"},
+                    {"updated": {"$gte": "2024-05-20"}}
                 ]
             }
         }
@@ -116,7 +116,7 @@ The answers for code blocks in this section are as follows:
     {
         "$project": {
             "_id": 0,
-            "page_content": 1,
+            "body": 1,
             "score": {"$meta": "vectorSearchScore"}
         }
     }
