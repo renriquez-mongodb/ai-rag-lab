@@ -36,9 +36,8 @@ return embedding.tolist()
 <div>
 ```python
 for doc in split_docs:
-    temp = doc.copy()
-    temp["embedding"] = get_embedding(temp["body"])
-    embedded_docs.append(temp)
+    doc["embedding"] = get_embedding(doc["body"])
+    embedded_docs.append(doc)
 ```
 </div>
 </details>
