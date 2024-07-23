@@ -1,3 +1,9 @@
 # 📘 Tools, libraries, and concepts
 
-TO-DO
+Memory is important for the LLM to have multi-turn conversations with the user. 
+
+In this lab, you will persist chat messages in a separate MongoDB collection, indexed by session ID.
+
+For each new user query, you will fetch previous messages for that session from the collection and pass them to the LLM.
+
+Then once the LLM has generated a response to the query, you will write the query and the LLM's answer to the collection as two separate entries but having the same session ID. 
