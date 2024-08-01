@@ -23,7 +23,7 @@ Select the `mongodb_rag_lab` database and the `knowledge` collection, change the
     {
       "type": "vector",
       "path": "embedding",
-      "numDimensions": 1024,
+      "numDimensions": 384,
       "similarity": "cosine"
     }
   ]
@@ -31,5 +31,5 @@ Select the `mongodb_rag_lab` database and the `knowledge` collection, change the
 ```
 
 :::info
-The number of dimensions in the index definition is 1024 since we are using Mixedbread AI's open-source [mxbai-embed-large-v1](https://huggingface.co/mixedbread-ai/mxbai-embed-large-v1) model to generate embeddings in this lab.
+The number of dimensions in the index definition is 384 since we are using the [gte-small](https://huggingface.co/thenlper/gte-small) model to generate embeddings in this lab.
 :::
