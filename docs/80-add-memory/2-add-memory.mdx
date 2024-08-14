@@ -6,7 +6,7 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 10:
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_28**
+**CODE_BLOCK_20**
 
 <details>
 <summary>Answer</summary>
@@ -17,23 +17,7 @@ history_collection.create_index("session_id")
 </div>
 </details>
 
-**CODE_BLOCK_29**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-{
-    "session_id": session_id,
-    "role": role,
-    "content": content,
-    "timestamp": datetime.now(),
-}
-```
-</div>
-</details>
-
-**CODE_BLOCK_30**
+**CODE_BLOCK_21**
 
 <details>
 <summary>Answer</summary>
@@ -44,7 +28,7 @@ history_collection.insert_one(message)
 </div>
 </details>
 
-**CODE_BLOCK_31**
+**CODE_BLOCK_22**
 
 <details>
 <summary>Answer</summary>
@@ -55,42 +39,29 @@ history_collection.find({"session_id": session_id}).sort("timestamp", 1)
 </div>
 </details>
 
-**CODE_BLOCK_32**
+**CODE_BLOCK_23**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-[{"role": msg["role"], "content": msg["content"]} for msg in cursor]
+retrieve_session_history(session_id)
 ```
 </div>
 </details>
 
-**CODE_BLOCK_33**
+**CODE_BLOCK_24**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-message_history = retrieve_session_history(session_id)
-messages.extend(message_history)
+{"role": "user", "content": user_query}
 ```
 </div>
 </details>
 
-**CODE_BLOCK_34**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-user_message = {"role": "user", "content": user_query}
-messages.append(user_message)
-```
-</div>
-</details>
-
-**CODE_BLOCK_35**
+**CODE_BLOCK_25**
 
 <details>
 <summary>Answer</summary>

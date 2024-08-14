@@ -6,7 +6,7 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 4: 
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_3**
+**CODE_BLOCK_1**
 
 <details>
 <summary>Answer</summary>
@@ -19,18 +19,7 @@ RecursiveCharacterTextSplitter.from_tiktoken_encoder(
 </div>
 </details>
 
-**CODE_BLOCK_4**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-doc[text_field]
-```
-</div>
-</details>
-
-**CODE_BLOCK_5**
+**CODE_BLOCK_2**
 
 <details>
 <summary>Answer</summary>
@@ -41,29 +30,13 @@ text_splitter.split_text(text)
 </div>
 </details>
 
-**CODE_BLOCK_6**
+**CODE_BLOCK_3**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-for chunk in chunks:
-    temp = doc.copy()
-    temp[text_field] = chunk
-    chunked_data.append(temp)
-```
-</div>
-</details>
-
-**CODE_BLOCK_7**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-for doc in docs:
-    chunks = get_chunks(doc, "body")
-    split_docs.extend(chunks)
+get_chunks(doc, "body")
 ```
 </div>
 </details>

@@ -6,7 +6,7 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 9: 
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_21**
+**CODE_BLOCK_13**
 
 <details>
 <summary>Answer</summary>
@@ -17,34 +17,27 @@ vector_search(user_query)
 </div>
 </details>
 
-**CODE_BLOCK_22**
+**CODE_BLOCK_14**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-"\n\n".join([d.get("body", "") for d in context])
+create_prompt(user_query)
 ```
 </div>
 </details>
 
-**CODE_BLOCK_23**
+**CODE_BLOCK_15**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-response = fw_client.chat.completions.create(
+fw_client.chat.completions.create(
     model=model,
-    temperature=0,
-    messages=[
-        {
-            "role": "user",
-            "content": create_prompt(user_query),
-        }
-    ],
+    messages=[{"role": "user", "content": prompt}]
 )
-print(response.choices[0].message.content)
 ```
 </div>
 </details>

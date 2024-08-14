@@ -6,38 +6,24 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 5: 
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_8**
+**CODE_BLOCK_4**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-SentenceTransformer("thenlper/gte-small")
+embedding_model.encode(text)
 ```
 </div>
 </details>
 
-**CODE_BLOCK_9**
+**CODE_BLOCK_5**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-embedding = embedding_model.encode(text)
-return embedding.tolist()
-```
-</div>
-</details>
-
-**CODE_BLOCK_10**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-for doc in tqdm(split_docs):
-    doc["embedding"] = get_embedding(doc["body"])
-    embedded_docs.append(doc)
+doc["embedding"] = get_embedding(doc["body"])
 ```
 </div>
 </details>

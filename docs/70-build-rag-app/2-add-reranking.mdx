@@ -6,7 +6,7 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **🦹‍�
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_24**
+**CODE_BLOCK_16**
 
 <details>
 <summary>Answer</summary>
@@ -15,17 +15,6 @@ The answers for code blocks in this section are as follows:
 rerank_model.rank(
     user_query, documents, return_documents=True, top_k=5
 )
-```
-</div>
-</details>
-
-**CODE_BLOCK_25**
-
-<details>
-<summary>Answer</summary>
-<div>
-```python
-"\n\n".join([d.get("text", "") for d in reranked_documents])
 ```
 </div>
 </details>

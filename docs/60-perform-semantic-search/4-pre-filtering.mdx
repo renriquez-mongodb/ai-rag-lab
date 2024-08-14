@@ -2,39 +2,37 @@
 
 Pre-filtering a technique to optimize vector search by only considering documents that match certain criteria during vector search.
 
-Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **🦹‍♀️ Combine pre-filtering with vector search** section in the notebook to get a sense of how to combine pre-filtering with MongoDB Atlas Vector Search.
+## Filter for documents where the content type is `Video`
 
-:::caution
-**DO NOT** actually modify the existing vector index definitions in the Atlas UI, or the existing pipeline definitions in the code.
-:::
-
-The answers for code blocks in this section are as follows:
-
-**CODE_BLOCK_17**
+To do this, you will first need to modify the vector search index you created previously. The new index definition should look as follows:
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
 {
-    "fields": [
-        {
-            "numDimensions": 1024,
-            "path": "embedding",
-            "similarity": "cosine",
-            "type": "vector"
-        },
-        {
-            "path": "metadata.contentType",
-            "type": "filter"
-        }
-    ]
+  "fields": [
+    {
+      "type": "vector",
+      "path": "embedding",
+      "numDimensions": 384,
+      "similarity": "cosine"
+    },
+    {
+      "type":"filter",
+      "path":"metadata.contentType"
+    }
+  ]
 }
 ```
 </div>
 </details>
 
-**CODE_BLOCK_18**
+Once you have updated the vector search index, fill in `<CODE_BLOCK_11>` and run the cells under the **Filter for documents where the content type is Video** section in the notebook to see how the filter impacts the vector search results.
+
+The answer for this code block is as follows:
+
+**CODE_BLOCK_11**
 
 <details>
 <summary>Answer</summary>
@@ -43,9 +41,9 @@ The answers for code blocks in this section are as follows:
 [
     {
         "$vectorSearch": {
-            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
-            "queryVector": query_embedding,
+            "index": "vector_index",
             "path": "embedding",
+            "queryVector": query_embedding,
             "numCandidates": 150,
             "limit": 5,
             "filter": {"metadata.contentType": "Video"}
@@ -63,35 +61,42 @@ The answers for code blocks in this section are as follows:
 </div>
 </details>
 
-**CODE_BLOCK_19**
+
+## Filter on documents which have been updated on or after `2024-05-19` and where the content type is `Tutorial`
+
+Again, you will need to modify the vector search index. The new index definition should look as follows:
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
 {
-    "fields": [
-        {
-            "numDimensions": 1024,
-            "path": "embedding",
-            "similarity": "cosine",
-            "type": "vector"
-        },
-        {
-            "path": "metadata.contentType",
-            "type": "filter"
-        },
-        {
-            "path": "updated",
-            "type": "filter"
-        }
-    ]
+  "fields": [
+    {
+      "type": "vector",
+      "path": "embedding",
+      "numDimensions": 384,
+      "similarity": "cosine"
+    },
+    {
+      "type":"filter",
+      "path":"metadata.contentType"
+    },
+    {
+      "type":"filter",
+      "path":"updated"
+    }
+  ]
 }
 ```
 </div>
 </details>
 
-**CODE_BLOCK_20**
+Once you have updated the vector search index, fill in `<CODE_BLOCK_12>` and run the cells under the **Filter on documents which have been updated on or after 2024-05-19 and where the content type is Tutorial** section in the notebook to see how the filter impacts the vector search results.
+
+The answer for this code block is as follows:
+
+**CODE_BLOCK_12**
 
 <details>
 <summary>Answer</summary>
@@ -100,16 +105,14 @@ The answers for code blocks in this section are as follows:
 [
     {
         "$vectorSearch": {
-            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
-            "queryVector": query_embedding,
+            "index": "vector_index",
             "path": "embedding",
+            "queryVector": query_embedding,
             "numCandidates": 150,
             "limit": 5,
             "filter": {
-                "$and": [
-                    {"metadata.contentType": "Video"},
-                    {"updated": {"$gte": "2024-05-20"}}
-                ]
+                "metadata.contentType": "Tutorial",
+                "updated": {"$gte": "2024-05-19"}
             }
         }
     },

@@ -6,7 +6,18 @@ Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **🦹‍�
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_26**
+**CODE_BLOCK_17**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+create_prompt(user_query)
+```
+</div>
+</details>
+
+**CODE_BLOCK_18**
 
 <details>
 <summary>Answer</summary>
@@ -14,20 +25,14 @@ The answers for code blocks in this section are as follows:
 ```python
 fw_client.chat.completions.create(
     model=model,
-    temperature=0,
-    stream=True,
-    messages=[
-        {
-            "role": "user",
-            "content": create_prompt(user_query),
-        }
-    ],
+    messages=[{"role": "user", "content": prompt}],
+    stream=True
 )
 ```
 </div>
 </details>
 
-**CODE_BLOCK_27**
+**CODE_BLOCK_19**
 
 <details>
 <summary>Answer</summary>
