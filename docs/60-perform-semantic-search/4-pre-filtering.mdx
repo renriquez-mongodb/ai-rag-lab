@@ -3,43 +3,39 @@
 Pre-filtering is a technique to optimize vector search by only considering documents that match certain criteria during vector search.
 
 In this section, you will learn how to combine filters with vector search. This mainly involves:
-
 * Updating the vector search index to include the appropriate filter fields
 * Updating the `$vectorSearch` stage in the aggregation pipeline definition to include the filters
 
-## Filter for documents where the content type is `Video`
+Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **🦹‍♀️ Combine pre-filtering with vector search** section in the notebook to experiment with combining pre-filters with your vector search queries.
 
-To do this, you will first need to modify the vector search index you created previously.
+The answers for code blocks in this section are as follows:
 
-**Updated index definition**
+**CODE_BLOCK_12**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
 {
-  "fields": [
-    {
-      "type": "vector",
-      "path": "embedding",
-      "numDimensions": 384,
-      "similarity": "cosine"
-    },
-    {
-      "type":"filter",
-      "path":"metadata.contentType"
+    "name": ATLAS_VECTOR_SEARCH_INDEX_NAME,
+    "type": "vectorSearch",
+    "definition": {
+        "fields": [
+            {
+                "type": "vector",
+                "path": "embedding",
+                "numDimensions": 384,
+                "similarity": "cosine"
+            },
+            {"type": "filter", "path": "metadata.contentType"}
+        ]
     }
-  ]
 }
 ```
 </div>
 </details>
 
-Once you have updated the vector search index, fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Filter for documents where the content type is Video** section in the notebook to see how the filter impacts the vector search results.
-
-The answers for code blocks in this section are as follows:
-
-**CODE_BLOCK_11**
+**CODE_BLOCK_13**
 
 <details>
 <summary>Answer</summary>
@@ -48,7 +44,7 @@ The answers for code blocks in this section are as follows:
 [
     {
         "$vectorSearch": {
-            "index": "vector_index",
+            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
             "path": "embedding",
             "queryVector": query_embedding,
             "numCandidates": 150,
@@ -68,44 +64,33 @@ The answers for code blocks in this section are as follows:
 </div>
 </details>
 
-
-## Filter on documents which have been updated on or after `2024-05-19` and where the content type is `Tutorial`
-
-Again, you will first need to modify the vector search index.
-
-**Updated index definition**
+**CODE_BLOCK_14**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
 {
-  "fields": [
-    {
-      "type": "vector",
-      "path": "embedding",
-      "numDimensions": 384,
-      "similarity": "cosine"
-    },
-    {
-      "type":"filter",
-      "path":"metadata.contentType"
-    },
-    {
-      "type":"filter",
-      "path":"updated"
+    "name": ATLAS_VECTOR_SEARCH_INDEX_NAME,
+    "type": "vectorSearch",
+    "definition": {
+        "fields": [
+            {
+                "type": "vector",
+                "path": "embedding",
+                "numDimensions": 384,
+                "similarity": "cosine"
+            },
+            {"type": "filter", "path": "metadata.contentType"},
+            {"type": "filter", "path": "updated"}
+        ]
     }
-  ]
 }
 ```
 </div>
 </details>
 
-Once you have updated the vector search index, fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Filter on documents which have been updated on or after 2024-05-19 and where the content type is Tutorial** section in the notebook to see how the filter impacts the vector search results.
-
-The answers for code blocks in this section are as follows:
-
-**CODE_BLOCK_12**
+**CODE_BLOCK_15**
 
 <details>
 <summary>Answer</summary>
@@ -114,14 +99,16 @@ The answers for code blocks in this section are as follows:
 [
     {
         "$vectorSearch": {
-            "index": "vector_index",
+            "index": ATLAS_VECTOR_SEARCH_INDEX_NAME,
             "path": "embedding",
             "queryVector": query_embedding,
             "numCandidates": 150,
             "limit": 5,
             "filter": {
-                "metadata.contentType": "Tutorial",
-                "updated": {"$gte": "2024-05-19"}
+                "$and": [
+                    {"metadata.contentType": "Tutorial"},
+                    {"updated": {"$gte": "2024-05-19"}}
+                ]
             }
         }
     },
@@ -129,6 +116,7 @@ The answers for code blocks in this section are as follows:
         "$project": {
             "_id": 0,
             "body": 1,
+            "updated": 1,
             "score": {"$meta": "vectorSearchScore"}
         }
     }
