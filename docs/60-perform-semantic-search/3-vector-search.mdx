@@ -1,12 +1,12 @@
 # 👐 Perform semantic search
 
-Now let's run some vector search queries against our data present in MongoDB.
+Now let's run some vector search queries against our data present in MongoDB. 
 
 Fill in any `<CODE_BLOCK_N>` placeholders and run the cells under the **Step 8: Perform semantic search on your data** section in the notebook to run vector search queries against your data.
 
 The answers for code blocks in this section are as follows:
 
-**CODE_BLOCK_8**
+**CODE_BLOCK_9**
 
 <details>
 <summary>Answer</summary>
@@ -17,7 +17,7 @@ get_embedding(user_query)
 </div>
 </details>
 
-**CODE_BLOCK_9**
+**CODE_BLOCK_10**
 
 <details>
 <summary>Answer</summary>
@@ -30,7 +30,7 @@ get_embedding(user_query)
             "queryVector": query_embedding,
             "path": "embedding",
             "numCandidates": 150,
-            "limit": 5,
+            "limit": 5
         }
     },
     {
@@ -45,7 +45,7 @@ get_embedding(user_query)
 </div>
 </details>
 
-**CODE_BLOCK_10**
+**CODE_BLOCK_11**
 
 <details>
 <summary>Answer</summary>
