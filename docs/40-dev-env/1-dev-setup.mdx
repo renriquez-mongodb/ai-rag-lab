@@ -2,24 +2,36 @@ import Screenshot from "@site/src/components/Screenshot";
 
 # 👐 Setup dev environment
 
-You will be working in a Jupyter Notebook throughout this lab. The easiest and recommended way to run the lab notebook is using Google Colab. 
+## Option 1: GitHub Codespaces
 
-Navigate to the notebook on [GitHub](https://github.com/mongodb-developer/ai-rag-lab-notebooks/blob/main/notebook_template.ipynb) and click the **Open in Colab** badge at the top of the notebook to open it in Google Colab.
+You will be working in a Jupyter Notebook in a GitHub Codespace throughout this lab. A codespace is a cloud-hosted, containerized development environment that comes pre-configured with all the tools you need to run this lab.
 
-<Screenshot url="https://github.com/mongodb-developer/ai-rag-lab-notebooks" src="img/screenshots/40-dev-env/1-open-colab.png" alt="Open in Colab" />
+Navigate to [this](https://github.com/codespaces/new/mongodb-developer/ai-rag-lab-notebooks?quickstart=1) link. You will be prompted to sign into GitHub if you haven't already. Once signed in, click the **Create new codespace** button to create a new codespace.
 
-:::tip
-The notebook will open in Google Colab in read-only mode. Please **make a copy of the notebook** to keep the code changes you will make during this workshop for future reference.
+<Screenshot url="https://github.com/codespaces" src="img/screenshots/40-dev-env/1-create-codespace.png" alt="Start a codespace" />
 
-To do this, choose one of the **Save a copy** options in the **File** menu.
-:::
+Let it run for a few seconds as it prepares your environment. It will clone the repository, prepare the container, and run the installation scripts.
+
+In the left navigation bar of the IDE, click on the file named `notebook_template.ipynb` to open the Jupyter Notebook for the lab.
+
+<Screenshot url="https://github.com/codespaces" src="img/screenshots/40-dev-env/2-nav-notebook.png" alt="Navigate to the notebook" />
+
+Next, select the Python interpreter by clicking **Select Kernel** at the top right of the IDE.
+
+<Screenshot url="https://github.com/codespaces" src="img/screenshots/40-dev-env/3-select-kernel.png" alt="Select kernel" />
+
+In the modal that appears, click **Python environments...** and select the recommended interpreter.
+
+<Screenshot url="https://github.com/codespaces" src="img/screenshots/40-dev-env/4-python-env-modal.png" alt="Select recommended interpreter" />
+
+<Screenshot url="https://github.com/codespaces" src="img/screenshots/40-dev-env/5-select-default.png" alt="Select recommended interpreter" />
 
 That's it! You're ready for the lab!
 
-## [Backup] Local setup
+## Option 2: Run locally
 
 :::caution
-Run the notebook locally ONLY IF Google Colab is not an option/doesn't work for you.
+During the lab, we will use GitHub Codespaces. These instructions are here just in case you can't use Codespaces or if you really, really, really want a local installation.
 :::
 
 If you want to run the notebook locally, follow the steps below:
@@ -50,6 +62,6 @@ pip install notebook
 jupyter notebook
 ```
 
-* In the browser tab that pops up, open the notebook named `notebook_template.ipynb`.
+* In the browser tab that pops up, open the file named `notebook_template.ipynb`.
 
-<Screenshot url="localhost:8888/tree" src="img/screenshots/40-dev-env/2-jupyter-notebook.png" alt="Jupyter Notebook" />
+<Screenshot url="localhost:8888/tree" src="img/screenshots/40-dev-env/6-jupyter-notebook.png" alt="Jupyter Notebook" />
