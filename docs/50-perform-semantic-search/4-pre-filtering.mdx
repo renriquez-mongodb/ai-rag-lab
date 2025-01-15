@@ -27,7 +27,7 @@ The answers for code blocks in this section are as follows:
                 "numDimensions": 384,
                 "similarity": "cosine"
             },
-            {"type": "filter", "path": "metadata.contentType"}
+            {"type": "filter", "path": "metadata.productName"}
         ]
     }
 }
@@ -49,7 +49,7 @@ The answers for code blocks in this section are as follows:
             "queryVector": query_embedding,
             "numCandidates": 150,
             "limit": 5,
-            "filter": {"metadata.contentType": "Video"}
+            "filter": {"metadata.productName": "MongoDB Atlas"}
         }
     },
     {
