@@ -1,0 +1,25 @@
+{
+  "id": "mongodb-atlas/create-account",
+  "title": "👐 Create your account",
+  "description": "In this lab, you will learn how to use MongoDB Atlas as a knowledge base as well as a memory provider for RAG applications.",
+  "source": "@site/docs/20-mongodb-atlas/1-create-account.mdx",
+  "sourceDirName": "20-mongodb-atlas",
+  "slug": "/mongodb-atlas/create-account",
+  "permalink": "/ai-rag-lab/docs/mongodb-atlas/create-account",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/20-mongodb-atlas/1-create-account.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "MongoDB Atlas",
+    "permalink": "/ai-rag-lab/docs/category/mongodb-atlas"
+  },
+  "next": {
+    "title": "👐 Deploy a database cluster",
+    "permalink": "/ai-rag-lab/docs/mongodb-atlas/create-cluster"
+  }
+}

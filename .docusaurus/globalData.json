@@ -1,0 +1,210 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/ai-rag-lab/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/ai-rag-lab/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "add-memory/add-memory",
+              "path": "/ai-rag-lab/docs/add-memory/add-memory",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "build-rag-app/add-reranking",
+              "path": "/ai-rag-lab/docs/build-rag-app/add-reranking",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "build-rag-app/build-rag-app",
+              "path": "/ai-rag-lab/docs/build-rag-app/build-rag-app",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "build-rag-app/stream-responses",
+              "path": "/ai-rag-lab/docs/build-rag-app/stream-responses",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/dev-setup",
+              "path": "/ai-rag-lab/docs/dev-env/dev-setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/jupyter-notebooks",
+              "path": "/ai-rag-lab/docs/dev-env/jupyter-notebooks",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/setup-pre-reqs",
+              "path": "/ai-rag-lab/docs/dev-env/setup-pre-reqs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fireworks-ai/create-account",
+              "path": "/ai-rag-lab/docs/fireworks-ai/create-account",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "fireworks-ai/create-api-key",
+              "path": "/ai-rag-lab/docs/fireworks-ai/create-api-key",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/ai-rag-lab/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mongodb-atlas/create-account",
+              "path": "/ai-rag-lab/docs/mongodb-atlas/create-account",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mongodb-atlas/create-cluster",
+              "path": "/ai-rag-lab/docs/mongodb-atlas/create-cluster",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "mongodb-atlas/get-connection-string",
+              "path": "/ai-rag-lab/docs/mongodb-atlas/get-connection-string",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "perform-semantic-search/concepts",
+              "path": "/ai-rag-lab/docs/perform-semantic-search/concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "perform-semantic-search/create-vector-index",
+              "path": "/ai-rag-lab/docs/perform-semantic-search/create-vector-index",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "perform-semantic-search/pre-filtering",
+              "path": "/ai-rag-lab/docs/perform-semantic-search/pre-filtering",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "perform-semantic-search/vector-search",
+              "path": "/ai-rag-lab/docs/perform-semantic-search/vector-search",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "prepare-the-data/chunk-data",
+              "path": "/ai-rag-lab/docs/prepare-the-data/chunk-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "prepare-the-data/embed-data",
+              "path": "/ai-rag-lab/docs/prepare-the-data/embed-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "prepare-the-data/ingest-data",
+              "path": "/ai-rag-lab/docs/prepare-the-data/ingest-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "prepare-the-data/load-data",
+              "path": "/ai-rag-lab/docs/prepare-the-data/load-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "rag/components-of-rag",
+              "path": "/ai-rag-lab/docs/rag/components-of-rag",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "rag/rag-usecases",
+              "path": "/ai-rag-lab/docs/rag/rag-usecases",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "rag/what-is-rag",
+              "path": "/ai-rag-lab/docs/rag/what-is-rag",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "summary",
+              "path": "/ai-rag-lab/docs/summary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/retrieval-augmented-generation",
+              "path": "/ai-rag-lab/docs/category/retrieval-augmented-generation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/mongodb-atlas",
+              "path": "/ai-rag-lab/docs/category/mongodb-atlas",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/fireworks-ai",
+              "path": "/ai-rag-lab/docs/category/fireworks-ai",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/dev-environment",
+              "path": "/ai-rag-lab/docs/category/dev-environment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/prepare-the-data",
+              "path": "/ai-rag-lab/docs/category/prepare-the-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/perform-semantic-search-on-your-data",
+              "path": "/ai-rag-lab/docs/category/perform-semantic-search-on-your-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/build-the-rag-application",
+              "path": "/ai-rag-lab/docs/category/build-the-rag-application",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/add-memory-to-the-rag-application",
+              "path": "/ai-rag-lab/docs/category/add-memory-to-the-rag-application",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/ai-rag-lab/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": [
+        "G-ZJ28V71VTQ"
+      ],
+      "anonymizeIP": true,
+      "id": "default"
+    }
+  },
+  "docusaurus-lunr-search": {
+    "default": {
+      "fileNames": {
+        "searchDoc": "search-doc-1737131895555.json",
+        "lunrIndex": "lunr-index-1737131895555.json"
+      }
+    }
+  }
+}

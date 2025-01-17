@@ -1,0 +1,25 @@
+{
+  "id": "perform-semantic-search/vector-search",
+  "title": "👐 Perform semantic search",
+  "description": "Now let's run some vector search queries against our data present in MongoDB.",
+  "source": "@site/docs/60-perform-semantic-search/3-vector-search.mdx",
+  "sourceDirName": "60-perform-semantic-search",
+  "slug": "/perform-semantic-search/vector-search",
+  "permalink": "/ai-rag-lab/docs/perform-semantic-search/vector-search",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/60-perform-semantic-search/3-vector-search.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Create a vector search index",
+    "permalink": "/ai-rag-lab/docs/perform-semantic-search/create-vector-index"
+  },
+  "next": {
+    "title": "🦹 Combine pre-filtering with vector search",
+    "permalink": "/ai-rag-lab/docs/perform-semantic-search/pre-filtering"
+  }
+}

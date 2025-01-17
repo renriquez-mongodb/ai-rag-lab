@@ -1,0 +1,25 @@
+{
+  "id": "rag/components-of-rag",
+  "title": "📘 Components of a RAG system",
+  "description": "RAG systems have two main components: Retrieval and Generation.",
+  "source": "@site/docs/10-rag/3-components-of-rag.mdx",
+  "sourceDirName": "10-rag",
+  "slug": "/rag/components-of-rag",
+  "permalink": "/ai-rag-lab/docs/rag/components-of-rag",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/10-rag/3-components-of-rag.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📘 When to use RAG?",
+    "permalink": "/ai-rag-lab/docs/rag/rag-usecases"
+  },
+  "next": {
+    "title": "MongoDB Atlas",
+    "permalink": "/ai-rag-lab/docs/category/mongodb-atlas"
+  }
+}

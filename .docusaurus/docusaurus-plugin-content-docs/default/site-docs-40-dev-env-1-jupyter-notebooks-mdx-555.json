@@ -1,0 +1,25 @@
+{
+  "id": "dev-env/jupyter-notebooks",
+  "title": "📘 Running Jupyter Notebooks",
+  "description": "Jupyter Notebooks is an interactive Python environment.",
+  "source": "@site/docs/40-dev-env/1-jupyter-notebooks.mdx",
+  "sourceDirName": "40-dev-env",
+  "slug": "/dev-env/jupyter-notebooks",
+  "permalink": "/ai-rag-lab/docs/dev-env/jupyter-notebooks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/40-dev-env/1-jupyter-notebooks.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dev Environment",
+    "permalink": "/ai-rag-lab/docs/category/dev-environment"
+  },
+  "next": {
+    "title": "👐 Setup dev environment",
+    "permalink": "/ai-rag-lab/docs/dev-env/dev-setup"
+  }
+}

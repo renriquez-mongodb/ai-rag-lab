@@ -1,0 +1,25 @@
+{
+  "id": "rag/rag-usecases",
+  "title": "📘 When to use RAG?",
+  "description": "RAG is best suited for the following:",
+  "source": "@site/docs/10-rag/2-rag-usecases.mdx",
+  "sourceDirName": "10-rag",
+  "slug": "/rag/rag-usecases",
+  "permalink": "/ai-rag-lab/docs/rag/rag-usecases",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/10-rag/2-rag-usecases.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📘 What is RAG?",
+    "permalink": "/ai-rag-lab/docs/rag/what-is-rag"
+  },
+  "next": {
+    "title": "📘 Components of a RAG system",
+    "permalink": "/ai-rag-lab/docs/rag/components-of-rag"
+  }
+}

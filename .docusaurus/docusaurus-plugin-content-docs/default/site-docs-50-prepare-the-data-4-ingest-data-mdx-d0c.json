@@ -1,0 +1,25 @@
+{
+  "id": "prepare-the-data/ingest-data",
+  "title": "👐 Ingest data into MongoDB",
+  "description": "The final step to build a MongoDB vector store for our RAG application is to ingest the embedded article chunks into MongoDB.",
+  "source": "@site/docs/50-prepare-the-data/4-ingest-data.mdx",
+  "sourceDirName": "50-prepare-the-data",
+  "slug": "/prepare-the-data/ingest-data",
+  "permalink": "/ai-rag-lab/docs/prepare-the-data/ingest-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/50-prepare-the-data/4-ingest-data.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Generate embeddings",
+    "permalink": "/ai-rag-lab/docs/prepare-the-data/embed-data"
+  },
+  "next": {
+    "title": "Perform Semantic Search on Your Data",
+    "permalink": "/ai-rag-lab/docs/category/perform-semantic-search-on-your-data"
+  }
+}

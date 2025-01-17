@@ -1,0 +1,25 @@
+{
+  "id": "mongodb-atlas/get-connection-string",
+  "title": "👐 Get your connection string",
+  "description": "In order to ingest data into your cluster later in the lab, you will need to get the connection string for your cluster.",
+  "source": "@site/docs/20-mongodb-atlas/3-get-connection-string.mdx",
+  "sourceDirName": "20-mongodb-atlas",
+  "slug": "/mongodb-atlas/get-connection-string",
+  "permalink": "/ai-rag-lab/docs/mongodb-atlas/get-connection-string",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/20-mongodb-atlas/3-get-connection-string.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Deploy a database cluster",
+    "permalink": "/ai-rag-lab/docs/mongodb-atlas/create-cluster"
+  },
+  "next": {
+    "title": "Fireworks AI",
+    "permalink": "/ai-rag-lab/docs/category/fireworks-ai"
+  }
+}

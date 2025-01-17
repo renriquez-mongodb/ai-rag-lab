@@ -1,0 +1,25 @@
+{
+  "id": "prepare-the-data/chunk-data",
+  "title": "👐 Chunk up the data",
+  "description": "Since we are working with large documents, we first need to break them up into smaller chunks before embedding and storing them in MongoDB.",
+  "source": "@site/docs/50-prepare-the-data/2-chunk-data.mdx",
+  "sourceDirName": "50-prepare-the-data",
+  "slug": "/prepare-the-data/chunk-data",
+  "permalink": "/ai-rag-lab/docs/prepare-the-data/chunk-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/50-prepare-the-data/2-chunk-data.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Load the dataset",
+    "permalink": "/ai-rag-lab/docs/prepare-the-data/load-data"
+  },
+  "next": {
+    "title": "👐 Generate embeddings",
+    "permalink": "/ai-rag-lab/docs/prepare-the-data/embed-data"
+  }
+}

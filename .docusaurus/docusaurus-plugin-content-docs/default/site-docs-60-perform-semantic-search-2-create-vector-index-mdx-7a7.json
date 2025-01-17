@@ -1,0 +1,25 @@
+{
+  "id": "perform-semantic-search/create-vector-index",
+  "title": "👐 Create a vector search index",
+  "description": "To retrieve documents from MongoDB using vector search, you must configure a vector search index on the collection into which you ingested your data. The recommended way to do this is via the MongoDB drivers.",
+  "source": "@site/docs/60-perform-semantic-search/2-create-vector-index.mdx",
+  "sourceDirName": "60-perform-semantic-search",
+  "slug": "/perform-semantic-search/create-vector-index",
+  "permalink": "/ai-rag-lab/docs/perform-semantic-search/create-vector-index",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/60-perform-semantic-search/2-create-vector-index.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📘 Semantic search in MongoDB",
+    "permalink": "/ai-rag-lab/docs/perform-semantic-search/concepts"
+  },
+  "next": {
+    "title": "👐 Perform semantic search",
+    "permalink": "/ai-rag-lab/docs/perform-semantic-search/vector-search"
+  }
+}

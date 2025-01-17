@@ -1,0 +1,25 @@
+{
+  "id": "mongodb-atlas/create-cluster",
+  "title": "👐 Deploy a database cluster",
+  "description": "Now that you have a MongoDB Atlas account, you can create your first cluster for free.",
+  "source": "@site/docs/20-mongodb-atlas/2-create-cluster.mdx",
+  "sourceDirName": "20-mongodb-atlas",
+  "slug": "/mongodb-atlas/create-cluster",
+  "permalink": "/ai-rag-lab/docs/mongodb-atlas/create-cluster",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/20-mongodb-atlas/2-create-cluster.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Create your account",
+    "permalink": "/ai-rag-lab/docs/mongodb-atlas/create-account"
+  },
+  "next": {
+    "title": "👐 Get your connection string",
+    "permalink": "/ai-rag-lab/docs/mongodb-atlas/get-connection-string"
+  }
+}

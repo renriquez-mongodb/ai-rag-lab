@@ -1,0 +1,25 @@
+{
+  "id": "fireworks-ai/create-account",
+  "title": "👐 Create an account",
+  "description": "In this lab, we will use the Llama 3 8B Instruct model hosted by Fireworks AI.",
+  "source": "@site/docs/30-fireworks-ai/1-create-account.mdx",
+  "sourceDirName": "30-fireworks-ai",
+  "slug": "/fireworks-ai/create-account",
+  "permalink": "/ai-rag-lab/docs/fireworks-ai/create-account",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/30-fireworks-ai/1-create-account.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Fireworks AI",
+    "permalink": "/ai-rag-lab/docs/category/fireworks-ai"
+  },
+  "next": {
+    "title": "👐 Create an API key",
+    "permalink": "/ai-rag-lab/docs/fireworks-ai/create-api-key"
+  }
+}

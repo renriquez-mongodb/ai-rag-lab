@@ -1,0 +1,23 @@
+{
+  "id": "summary",
+  "title": "🎯 Summary",
+  "description": "Congratulations! Following this lab, you have successfully:",
+  "source": "@site/docs/summary.mdx",
+  "sourceDirName": ".",
+  "slug": "/summary",
+  "permalink": "/ai-rag-lab/docs/summary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/summary.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Add memory to the RAG application",
+    "permalink": "/ai-rag-lab/docs/add-memory/add-memory"
+  }
+}

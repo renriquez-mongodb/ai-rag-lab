@@ -1,0 +1,25 @@
+{
+  "id": "dev-env/dev-setup",
+  "title": "👐 Setup dev environment",
+  "description": "Option 1: GitHub Codespaces",
+  "source": "@site/docs/40-dev-env/2-dev-setup.mdx",
+  "sourceDirName": "40-dev-env",
+  "slug": "/dev-env/dev-setup",
+  "permalink": "/ai-rag-lab/docs/dev-env/dev-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/40-dev-env/2-dev-setup.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "📘 Running Jupyter Notebooks",
+    "permalink": "/ai-rag-lab/docs/dev-env/jupyter-notebooks"
+  },
+  "next": {
+    "title": "👐 Setup prerequisites",
+    "permalink": "/ai-rag-lab/docs/dev-env/setup-pre-reqs"
+  }
+}

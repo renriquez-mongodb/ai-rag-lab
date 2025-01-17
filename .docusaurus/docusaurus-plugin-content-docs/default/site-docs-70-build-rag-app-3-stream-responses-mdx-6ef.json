@@ -1,0 +1,25 @@
+{
+  "id": "build-rag-app/stream-responses",
+  "title": "🦹 Stream responses from the RAG application",
+  "description": "By default, generation results are returned once the generation is completed. Another option is to stream the results as they come, which is useful for chat use cases where the user can incrementally see results as each token is generated.",
+  "source": "@site/docs/70-build-rag-app/3-stream-responses.mdx",
+  "sourceDirName": "70-build-rag-app",
+  "slug": "/build-rag-app/stream-responses",
+  "permalink": "/ai-rag-lab/docs/build-rag-app/stream-responses",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/70-build-rag-app/3-stream-responses.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "🦹 Re-rank retrieved results",
+    "permalink": "/ai-rag-lab/docs/build-rag-app/add-reranking"
+  },
+  "next": {
+    "title": "Add memory to the RAG application",
+    "permalink": "/ai-rag-lab/docs/category/add-memory-to-the-rag-application"
+  }
+}

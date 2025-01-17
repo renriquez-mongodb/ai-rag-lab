@@ -1,0 +1,25 @@
+{
+  "id": "add-memory/add-memory",
+  "title": "👐 Add memory to the RAG application",
+  "description": "In many Q&A applications we want to allow the user to have a back-and-forth conversation with the LLM, meaning the application needs some sort of \"memory\" of past questions and answers, and some logic for incorporating those into its current thinking. In this section, you will retrieve chat message history from MongoDB and incorporate it in your RAG application.",
+  "source": "@site/docs/80-add-memory/1-add-memory.mdx",
+  "sourceDirName": "80-add-memory",
+  "slug": "/add-memory/add-memory",
+  "permalink": "/ai-rag-lab/docs/add-memory/add-memory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/80-add-memory/1-add-memory.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Add memory to the RAG application",
+    "permalink": "/ai-rag-lab/docs/category/add-memory-to-the-rag-application"
+  },
+  "next": {
+    "title": "🎯 Summary",
+    "permalink": "/ai-rag-lab/docs/summary"
+  }
+}

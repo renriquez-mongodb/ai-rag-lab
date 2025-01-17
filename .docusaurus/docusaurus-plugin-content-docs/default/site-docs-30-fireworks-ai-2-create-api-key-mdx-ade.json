@@ -1,0 +1,25 @@
+{
+  "id": "fireworks-ai/create-api-key",
+  "title": "👐 Create an API key",
+  "description": "Once logged in, navigate to API keys under User Settings.",
+  "source": "@site/docs/30-fireworks-ai/2-create-api-key.mdx",
+  "sourceDirName": "30-fireworks-ai",
+  "slug": "/fireworks-ai/create-api-key",
+  "permalink": "/ai-rag-lab/docs/fireworks-ai/create-api-key",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/30-fireworks-ai/2-create-api-key.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Create an account",
+    "permalink": "/ai-rag-lab/docs/fireworks-ai/create-account"
+  },
+  "next": {
+    "title": "Dev Environment",
+    "permalink": "/ai-rag-lab/docs/category/dev-environment"
+  }
+}

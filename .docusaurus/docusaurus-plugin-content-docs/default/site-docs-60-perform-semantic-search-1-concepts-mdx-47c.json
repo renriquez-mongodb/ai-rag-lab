@@ -1,0 +1,25 @@
+{
+  "id": "perform-semantic-search/concepts",
+  "title": "📘 Semantic search in MongoDB",
+  "description": "In MongoDB, you can semantically search through your data using MongoDB Atlas Vector Search.",
+  "source": "@site/docs/60-perform-semantic-search/1-concepts.mdx",
+  "sourceDirName": "60-perform-semantic-search",
+  "slug": "/perform-semantic-search/concepts",
+  "permalink": "/ai-rag-lab/docs/perform-semantic-search/concepts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/60-perform-semantic-search/1-concepts.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Perform Semantic Search on Your Data",
+    "permalink": "/ai-rag-lab/docs/category/perform-semantic-search-on-your-data"
+  },
+  "next": {
+    "title": "👐 Create a vector search index",
+    "permalink": "/ai-rag-lab/docs/perform-semantic-search/create-vector-index"
+  }
+}

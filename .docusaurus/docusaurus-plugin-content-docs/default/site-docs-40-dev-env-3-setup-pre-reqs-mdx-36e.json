@@ -1,0 +1,25 @@
+{
+  "id": "dev-env/setup-pre-reqs",
+  "title": "👐 Setup prerequisites",
+  "description": "Replace any placeholders and run the cells under Step 1: Setup prerequisites section in the notebook.",
+  "source": "@site/docs/40-dev-env/3-setup-pre-reqs.mdx",
+  "sourceDirName": "40-dev-env",
+  "slug": "/dev-env/setup-pre-reqs",
+  "permalink": "/ai-rag-lab/docs/dev-env/setup-pre-reqs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/40-dev-env/3-setup-pre-reqs.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Setup dev environment",
+    "permalink": "/ai-rag-lab/docs/dev-env/dev-setup"
+  },
+  "next": {
+    "title": "Prepare the Data",
+    "permalink": "/ai-rag-lab/docs/category/prepare-the-data"
+  }
+}

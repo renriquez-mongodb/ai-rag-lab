@@ -1,0 +1,25 @@
+{
+  "id": "prepare-the-data/embed-data",
+  "title": "👐 Generate embeddings",
+  "description": "To perform vector search on our data, we need to embed it (i.e. generate embedding vectors) before ingesting it into MongoDB.",
+  "source": "@site/docs/50-prepare-the-data/3-embed-data.mdx",
+  "sourceDirName": "50-prepare-the-data",
+  "slug": "/prepare-the-data/embed-data",
+  "permalink": "/ai-rag-lab/docs/prepare-the-data/embed-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mongodb-developer/ai-rag-lab/blob/main/docs/50-prepare-the-data/3-embed-data.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "👐 Chunk up the data",
+    "permalink": "/ai-rag-lab/docs/prepare-the-data/chunk-data"
+  },
+  "next": {
+    "title": "👐 Ingest data into MongoDB",
+    "permalink": "/ai-rag-lab/docs/prepare-the-data/ingest-data"
+  }
+}
